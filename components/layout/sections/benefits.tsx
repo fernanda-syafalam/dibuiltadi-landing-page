@@ -7,33 +7,33 @@ interface BenefitsProps {
   title: string;
   description: string;
 }
-
 const benefitList: BenefitsProps[] = [
   {
     icon: "Blocks",
     title: "Build Brand Trust",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur dolores.",
+      "Enhance customer confidence in your brand with reliable and professional services.",
   },
   {
     icon: "LineChart",
-    title: "More Leads",
+    title: "Generate More Leads",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam, natus consectetur.",
+      "Optimize your marketing strategies to attract more potential customers and increase engagement.",
   },
   {
     icon: "Wallet",
-    title: "Higher Conversions",
+    title: "Boost Conversions",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus consectetur. A odio velit cum aliquam",
+      "Turn visitors into loyal customers with effective strategies to drive your sales growth.",
   },
   {
     icon: "Sparkle",
-    title: "Test Marketing Ideas",
+    title: "Test New Marketing Ideas",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur dolores.",
+      "Explore and validate innovative marketing ideas to ensure your approach aligns with your target audience.",
   },
 ];
+
 
 export const BenefitsSection = () => {
   return (
@@ -43,12 +43,13 @@ export const BenefitsSection = () => {
           <h2 className="text-lg text-primary mb-2 tracking-wider">Benefits</h2>
 
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Your Shortcut to Success
+            Stay Ahead of the Competition
           </h2>
           <p className="text-xl text-muted-foreground mb-8">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non
-            ducimus reprehenderit architecto rerum similique facere odit
-            deleniti necessitatibus quo quae.
+            Leverage our cutting-edge solutions to enhance your business
+            strategies and outperform your competitors. Our team provides
+            tailored services to meet your unique needs, ensuring sustainable
+            growth and success.
           </p>
         </div>
 

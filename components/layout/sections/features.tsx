@@ -7,43 +7,42 @@ interface FeaturesProps {
   title: string;
   description: string;
 }
-
 const featureList: FeaturesProps[] = [
   {
     icon: "TabletSmartphone",
     title: "Mobile Friendly",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam, consectetur.",
+      "With a focus on mobile-first design, we ensure that your website looks great and works well on any device.",
   },
   {
     icon: "BadgeCheck",
     title: "Social Proof",
     description:
-      "Lorem ipsum dolor sit amet consectetur. Natus consectetur, odio ea accusamus aperiam.",
+      "We use customer testimonials and reviews to build trust and credibility with potential customers.",
   },
   {
     icon: "Goal",
     title: "Targeted Content",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. odio ea accusamus aperiam.",
+      "We help you create content that speaks directly to your target audience and addresses their pain points.",
   },
   {
     icon: "PictureInPicture",
     title: "Strong Visuals",
     description:
-      "Lorem elit. A odio velit cum aliquam. Natus consectetur dolores, odio ea accusamus aperiam.",
+      "We use high-quality images and graphics to make your website stand out and capture visitors' attention.",
   },
   {
     icon: "MousePointerClick",
     title: "Clear CTA",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing. odio ea accusamus consectetur.",
+      "We make sure your call-to-action is clear and stands out, making it easy for visitors to take the next step.",
   },
   {
     icon: "Newspaper",
     title: "Clear Headline",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur.",
+      "We help you craft a headline that effectively communicates your value proposition and resonates with your target audience.",
   },
 ];
 
@@ -53,15 +52,14 @@ export const FeaturesSection = () => {
       <h2 className="text-lg text-primary text-center mb-2 tracking-wider">
         Features
       </h2>
-
       <h2 className="text-3xl md:text-4xl text-center font-bold mb-4">
         What Makes Us Different
       </h2>
 
       <h3 className="md:w-1/2 mx-auto text-xl text-center text-muted-foreground mb-8">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem
-        fugiat, odit similique quasi sint reiciendis quidem iure veritatis optio
-        facere tenetur.
+        We believe in user-friendly design and mobile-friendliness, so we built our
+        landing page builder with a drag and drop interface and fully responsive
+        templates.
       </h3>
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">

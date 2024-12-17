@@ -1,6 +1,7 @@
-import { Separator } from "@/components/ui/separator";
-import { ChevronsDownIcon } from "lucide-react";
-import Link from "next/link";
+import { Separator } from '@/components/ui/separator';
+import { ChevronsDownIcon } from 'lucide-react';
+import Image from 'next/image';
+import Link from 'next/link';
 
 export const FooterSection = () => {
   return (
@@ -9,9 +10,9 @@ export const FooterSection = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6 gap-x-12 gap-y-8">
           <div className="col-span-full xl:col-span-2">
             <Link href="#" className="flex font-bold items-center">
-              <ChevronsDownIcon className="w-9 h-9 mr-2 bg-gradient-to-tr from-primary via-primary/70 to-primary rounded-lg border border-secondary" />
+              <Image src="/logo.png" alt="Shadcn" width={35} height={35} className="rounded-lg mr-2" />
 
-              <h3 className="text-2xl">Shadcn</h3>
+              <h3 className="text-2xl">Dibuiltadi</h3>
             </Link>
           </div>
 
@@ -106,10 +107,10 @@ export const FooterSection = () => {
             &copy; 2024 Designed and developed by
             <Link
               target="_blank"
-              href="https://github.com/leoMirandaa"
+              href="https://github.com/fernanda-syafalam"
               className="text-primary transition-all border-primary hover:border-b-2 ml-1"
             >
-              Leo Miranda
+              Fernanda Syafalam
             </Link>
           </h3>
         </section>

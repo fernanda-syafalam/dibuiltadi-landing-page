@@ -69,8 +69,9 @@ export const ContactSection = () => {
             <h2 className="text-3xl md:text-4xl font-bold">Connect With Us</h2>
           </div>
           <p className="mb-8 text-muted-foreground lg:w-5/6">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
-            ipsam sint enim exercitationem ex autem corrupti quas tenetur
+            If you have any questions or would like to know more about our
+            services, please don't hesitate to contact us. We'll be happy to
+            hear from you.
           </p>
 
           <div className="flex flex-col gap-4">
@@ -98,7 +99,7 @@ export const ContactSection = () => {
                 <div className="font-bold">Mail US</div>
               </div>
 
-              <div>astaweda.official@gmail.com</div>
+              <div>info@arthaprada.co.id</div>
             </div>
 
             <div>

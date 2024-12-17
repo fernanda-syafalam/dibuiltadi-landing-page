@@ -13,7 +13,7 @@ import { TestimonialSection } from '@/components/layout/sections/testimonial';
 import Head from 'next/head';
 
 export const metadata = {
-  title: 'Astaweda - Software House and Development Agency',
+  title: 'Dibuiltadi - Software House and Development Agency',
   description: 'Free Shadcn landing page for developers',
   icons: {
     icon: '/favicon.ico'
@@ -54,8 +54,8 @@ export default function Home() {
       <ServicesSection />
       <TestimonialSection />
       <TeamSection />
-      <CommunitySection />
-      <PricingSection />
+      {/* <CommunitySection /> */}
+      {/* <PricingSection /> */}
       <ContactSection />
       <FAQSection />
       <FooterSection />
