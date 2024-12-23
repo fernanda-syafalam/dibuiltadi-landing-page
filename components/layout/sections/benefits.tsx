@@ -1,6 +1,6 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Icon } from "@/components/ui/icon";
-import { icons } from "lucide-react";
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Icon } from '@/components/ui/icon';
+import { icons } from 'lucide-react';
 
 interface BenefitsProps {
   icon: string;
@@ -9,31 +9,26 @@ interface BenefitsProps {
 }
 const benefitList: BenefitsProps[] = [
   {
-    icon: "Blocks",
-    title: "Build Brand Trust",
-    description:
-      "Enhance customer confidence in your brand with reliable and professional services.",
+    icon: 'Code',
+    title: 'Customized Software Solutions',
+    description: 'Tailored software development designed to meet your unique business needs, ensuring scalability and security.'
   },
   {
-    icon: "LineChart",
-    title: "Generate More Leads",
-    description:
-      "Optimize your marketing strategies to attract more potential customers and increase engagement.",
+    icon: 'Smartphone',
+    title: 'Mobile App Development',
+    description: 'Seamless and engaging mobile applications to connect with your customers effectively on iOS and Android.'
   },
   {
-    icon: "Wallet",
-    title: "Boost Conversions",
-    description:
-      "Turn visitors into loyal customers with effective strategies to drive your sales growth.",
+    icon: 'Database',
+    title: 'Enterprise Integration',
+    description: 'Comprehensive ERP and CRM solutions that streamline operations and enhance productivity across your organization.'
   },
   {
-    icon: "Sparkle",
-    title: "Test New Marketing Ideas",
-    description:
-      "Explore and validate innovative marketing ideas to ensure your approach aligns with your target audience.",
-  },
+    icon: 'Paintbrush',
+    title: 'UI/UX Design Excellence',
+    description: 'Intuitive and visually appealing designs that provide exceptional user experiences across all platforms.'
+  }
 ];
-
 
 export const BenefitsSection = () => {
   return (
@@ -42,31 +37,19 @@ export const BenefitsSection = () => {
         <div>
           <h2 className="text-lg text-primary mb-2 tracking-wider">Benefits</h2>
 
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Stay Ahead of the Competition
-          </h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Why Choose PT Dibuiltadi Teknologi Kreatif?</h2>
           <p className="text-xl text-muted-foreground mb-8">
-            Leverage our cutting-edge solutions to enhance your business
-            strategies and outperform your competitors. Our team provides
-            tailored services to meet your unique needs, ensuring sustainable
-            growth and success.
+            Unlock your business potential with our innovative solutions, designed to empower your organization with efficiency,
+            scalability, and reliability.
           </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-4 w-full">
           {benefitList.map(({ icon, title, description }, index) => (
-            <Card
-              key={title}
-              className="bg-muted/50 dark:bg-card hover:bg-background transition-all delay-75 group/number"
-            >
+            <Card key={title} className="bg-muted/50 dark:bg-card hover:bg-background transition-all delay-75 group/number">
               <CardHeader>
                 <div className="flex justify-between">
-                  <Icon
-                    name={icon as keyof typeof icons}
-                    size={32}
-                    color="hsl(var(--primary))"
-                    className="mb-6 text-primary"
-                  />
+                  <Icon name={icon as keyof typeof icons} size={32} color="hsl(var(--primary))" className="mb-6 text-primary" />
                   <span className="text-5xl text-muted-foreground/15 font-medium transition-all delay-75 group-hover/number:text-muted-foreground/30">
                     0{index + 1}
                   </span>
@@ -75,9 +58,7 @@ export const BenefitsSection = () => {
                 <CardTitle>{title}</CardTitle>
               </CardHeader>
 
-              <CardContent className="text-muted-foreground">
-                {description}
-              </CardContent>
+              <CardContent className="text-muted-foreground">{description}</CardContent>
             </Card>
           ))}
         </div>

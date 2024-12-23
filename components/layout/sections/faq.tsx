@@ -5,69 +5,69 @@ interface FAQProps {
   answer: string;
   value: string;
 }
+
 const FAQList: FAQProps[] = [
   {
-    question: 'What services does your software house provide?',
+    question: 'What services does PT Dibuiltadi Teknologi Kreatif provide?',
     answer:
-      'We offer custom software development, web and mobile app development, UI/UX design, system integration, and ongoing support and maintenance.',
+      'We specialize in custom software development, mobile app development, UI/UX design, ERP and CRM systems, virtual account integration, and IT consulting.',
     value: 'item-1'
   },
   {
-    question: 'How long does it take to develop a software project?',
+    question: 'What industries do you serve?',
     answer:
-      'The timeline depends on the complexity and scope of the project. A simple project may take a few weeks, while a more complex one could take several months. We provide clear timelines after assessing your requirements.',
+      'We provide tailored solutions for various industries, including retail, financial services, manufacturing, healthcare, and more.',
     value: 'item-2'
   },
   {
-    question: 'Do you provide post-launch support and maintenance?',
-    answer: 'Yes, we offer ongoing support, maintenance, and updates to ensure your software remains efficient, secure, and up-to-date.',
+    question: 'How do you approach software development projects?',
+    answer:
+      'Our process includes requirement analysis, prototyping, development, thorough testing, deployment, and ongoing maintenance to ensure quality and efficiency.',
     value: 'item-3'
   },
   {
-    question: 'Can you help improve an existing application or software?',
-    answer:
-      'Absolutely. We specialize in upgrading and optimizing existing applications to enhance performance, security, and user experience.',
+    question: 'Can you develop a mobile app for both iOS and Android?',
+    answer: 'Yes, we develop mobile apps for both platforms with a focus on performance, user experience, and seamless functionality.',
     value: 'item-4'
   },
   {
-    question: 'What technologies do you use for development?',
+    question: 'Do you offer post-launch support and updates?',
     answer:
-      'We work with modern technologies, including but not limited to ReactJS, NextJS, Angular, NodeJS, Laravel, Python, Flutter, and various cloud platforms such as AWS and Azure.',
+      'Yes, we provide continuous support and updates to keep your software secure, efficient, and aligned with evolving business needs.',
     value: 'item-5'
   },
   {
-    question: 'How do you ensure the quality of your software?',
+    question: 'What technologies does your team use?',
     answer:
-      'We follow industry best practices, including agile development, code reviews, automated testing, and continuous feedback to ensure high-quality and reliable software.',
+      'Our team works with modern technologies like ReactJS, NextJS, Laravel, Python, Flutter, and cloud platforms such as AWS and Azure.',
     value: 'item-6'
   },
   {
-    question: 'How much does a custom software project cost?',
+    question: 'Do you provide ERP and CRM solutions?',
     answer:
-      'The cost varies based on the project size, features, and complexity. We offer transparent pricing and will provide you with a detailed estimate after understanding your needs.',
+      'Yes, we specialize in developing and implementing ERP and CRM systems tailored to your business requirements, ensuring improved productivity and streamlined operations.',
     value: 'item-7'
   },
   {
-    question: 'Can you work with clients from different time zones?',
-    answer: 'Yes, we work with clients globally and adjust our communication and collaboration schedules to accommodate your time zone.',
+    question: 'How can we contact you for a project discussion?',
+    answer:
+      'You can reach us at admin@dibuiltadi.com or call us at +62 857 1131 5972. Visit our website at https://dibuiltadi.com for more information.',
     value: 'item-8'
   }
 ];
 
 export const FAQSection = () => {
   return (
-    <section id="faq" className="container md:w-[700px] py-24 sm:py-32">
+    <section id="faq" className="container md:w-[700px] py-24 sm:py-24">
       <div className="text-center mb-8">
         <h2 className="text-lg text-primary text-center mb-2 tracking-wider">FAQS</h2>
-
-        <h2 className="text-3xl md:text-4xl text-center font-bold">Common Questions</h2>
+        <h2 className="text-3xl md:text-4xl text-center font-bold">Frequently Asked Questions</h2>
       </div>
 
       <Accordion type="single" collapsible className="AccordionRoot">
         {FAQList.map(({ question, answer, value }) => (
           <AccordionItem key={value} value={value}>
             <AccordionTrigger className="text-left">{question}</AccordionTrigger>
-
             <AccordionContent>{answer}</AccordionContent>
           </AccordionItem>
         ))}

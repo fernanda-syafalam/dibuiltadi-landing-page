@@ -1,58 +1,40 @@
-"use client";
-import {
-  Card,
-  CardContent,
-  CardFooter,
-  CardHeader,
-} from "@/components/ui/card";
-import { Building2, Clock, Mail, Phone } from "lucide-react";
-import { useForm } from "react-hook-form";
-import { z } from "zod";
-import { zodResolver } from "@hookform/resolvers/zod";
-import {
-  Form,
-  FormControl,
-  FormField,
-  FormItem,
-  FormLabel,
-  FormMessage,
-} from "@/components/ui/form";
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
-import { Textarea } from "@/components/ui/textarea";
+'use client';
+import { Card, CardContent, CardFooter, CardHeader } from '@/components/ui/card';
+import { Building2, Clock, Mail, Phone } from 'lucide-react';
+import { useForm } from 'react-hook-form';
+import { z } from 'zod';
+import { zodResolver } from '@hookform/resolvers/zod';
+import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
+import { Input } from '@/components/ui/input';
+import { Button } from '@/components/ui/button';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
+import { Textarea } from '@/components/ui/textarea';
 
 const formSchema = z.object({
   firstName: z.string().min(2).max(255),
   lastName: z.string().min(2).max(255),
   email: z.string().email(),
   subject: z.string().min(2).max(255),
-  message: z.string(),
+  message: z.string()
 });
 
 export const ContactSection = () => {
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      firstName: "",
-      lastName: "",
-      email: "",
-      subject: "Web Development",
-      message: "",
-    },
+      firstName: '',
+      lastName: '',
+      email: '',
+      subject: 'Web Development',
+      message: ''
+    }
   });
 
   function onSubmit(values: z.infer<typeof formSchema>) {
     const { firstName, lastName, email, subject, message } = values;
     console.log(values);
 
-    const mailToLink = `mailto:info@arthaprada.co.id?subject=${subject}&body=Hello I am ${firstName} ${lastName}, my Email is ${email}. %0D%0A${message}`;
+    const mailToLink = `mailto:admin@dibuiltadi.com?subject=${subject}&body=Hello, I am ${firstName} ${lastName}. My email is ${email}. %0D%0A${message}`;
 
     window.location.href = mailToLink;
   }
@@ -62,55 +44,51 @@ export const ContactSection = () => {
       <section className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div>
           <div className="mb-4">
-            <h2 className="text-lg text-primary mb-2 tracking-wider">
-              Contact
-            </h2>
+            <h2 className="text-lg text-primary mb-2 tracking-wider">Contact</h2>
 
-            <h2 className="text-3xl md:text-4xl font-bold">Connect With Us</h2>
+            <h2 className="text-3xl md:text-4xl font-bold">Get in Touch with Us</h2>
           </div>
           <p className="mb-8 text-muted-foreground lg:w-5/6">
-            If you have any questions or would like to know more about our
-            services, please don&apos;t hesitate to contact us. We&apos;ll be happy to
-            hear from you.
+            Have any questions or want to learn more about our services? Feel free to reach out to us. We are here to assist you.
           </p>
 
           <div className="flex flex-col gap-4">
             <div>
               <div className="flex gap-2 mb-1">
                 <Building2 />
-                <div className="font-bold">Find us</div>
+                <div className="font-bold">Our Location</div>
               </div>
 
-              <div>Semarang, Indonesia.</div>
+              <div>Grobogan, Central Java, Indonesia.</div>
             </div>
 
             <div>
               <div className="flex gap-2 mb-1">
                 <Phone />
-                <div className="font-bold">Call us</div>
+                <div className="font-bold">Phone</div>
               </div>
 
-              <div>+62 (815) 748-26250</div>
+              <div>+62 857-1131-5972</div>
             </div>
 
             <div>
               <div className="flex gap-2 mb-1">
                 <Mail />
-                <div className="font-bold">Mail US</div>
+                <div className="font-bold">Email</div>
               </div>
 
-              <div>info@arthaprada.co.id</div>
+              <div>admin@dibuiltadi.com</div>
             </div>
 
             <div>
               <div className="flex gap-2">
                 <Clock />
-                <div className="font-bold">Visit us</div>
+                <div className="font-bold">Office Hours</div>
               </div>
 
               <div>
                 <div>Monday - Friday</div>
-                <div>8AM - 4PM</div>
+                <div>8 AM - 4 PM</div>
               </div>
             </div>
           </div>
@@ -120,10 +98,7 @@ export const ContactSection = () => {
           <CardHeader className="text-primary text-2xl"> </CardHeader>
           <CardContent>
             <Form {...form}>
-              <form
-                onSubmit={form.handleSubmit(onSubmit)}
-                className="grid w-full gap-4"
-              >
+              <form onSubmit={form.handleSubmit(onSubmit)} className="grid w-full gap-4">
                 <div className="flex flex-col md:!flex-row gap-8">
                   <FormField
                     control={form.control}
@@ -132,7 +107,7 @@ export const ContactSection = () => {
                       <FormItem className="w-full">
                         <FormLabel>First Name</FormLabel>
                         <FormControl>
-                          <Input placeholder="Leopoldo" {...field} />
+                          <Input placeholder="John" {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -145,7 +120,7 @@ export const ContactSection = () => {
                       <FormItem className="w-full">
                         <FormLabel>Last Name</FormLabel>
                         <FormControl>
-                          <Input placeholder="Miranda" {...field} />
+                          <Input placeholder="Doe" {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -161,11 +136,7 @@ export const ContactSection = () => {
                       <FormItem>
                         <FormLabel>Email</FormLabel>
                         <FormControl>
-                          <Input
-                            type="email"
-                            placeholder="jhondoe@gmail.com"
-                            {...field}
-                          />
+                          <Input type="email" placeholder="johndoe@gmail.com" {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -180,29 +151,18 @@ export const ContactSection = () => {
                     render={({ field }) => (
                       <FormItem>
                         <FormLabel>Subject</FormLabel>
-                        <Select
-                          onValueChange={field.onChange}
-                          defaultValue={field.value}
-                        >
+                        <Select onValueChange={field.onChange} defaultValue={field.value}>
                           <FormControl>
                             <SelectTrigger>
                               <SelectValue placeholder="Select a subject" />
                             </SelectTrigger>
                           </FormControl>
                           <SelectContent>
-                            <SelectItem value="Web Development">
-                              Web Development
-                            </SelectItem>
-                            <SelectItem value="Mobile Development">
-                              Mobile Development
-                            </SelectItem>
-                            <SelectItem value="Figma Design">
-                              Figma Design
-                            </SelectItem>
-                            <SelectItem value="REST API">REST API</SelectItem>
-                            <SelectItem value="FullStack Project">
-                              FullStack Project
-                            </SelectItem>
+                            <SelectItem value="Web Development">Web Development</SelectItem>
+                            <SelectItem value="Mobile Development">Mobile Development</SelectItem>
+                            <SelectItem value="UI/UX Design">UI/UX Design</SelectItem>
+                            <SelectItem value="IT Consulting">IT Consulting</SelectItem>
+                            <SelectItem value="Enterprise Solutions">Enterprise Solutions</SelectItem>
                           </SelectContent>
                         </Select>
                         <FormMessage />
@@ -219,12 +179,7 @@ export const ContactSection = () => {
                       <FormItem>
                         <FormLabel>Message</FormLabel>
                         <FormControl>
-                          <Textarea
-                            rows={5}
-                            placeholder="Your message..."
-                            className="resize-none"
-                            {...field}
-                          />
+                          <Textarea rows={5} placeholder="Your message..." className="resize-none" {...field} />
                         </FormControl>
 
                         <FormMessage />
@@ -233,7 +188,7 @@ export const ContactSection = () => {
                   />
                 </div>
 
-                <Button className="mt-4">Send message</Button>
+                <Button className="mt-4">Send Message</Button>
               </form>
             </Form>
           </CardContent>

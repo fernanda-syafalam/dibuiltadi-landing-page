@@ -11,51 +11,46 @@ interface ReviewProps {
   comment: string;
   rating: number;
 }
+
 const reviewList: ReviewProps[] = [
   {
     image: 'https://github.com/shadcn.png',
-    name: 'John Doe',
-    userName: 'Product Manager',
+    name: 'Surya Himawan',
+    userName: 'Manager, PT Nusa Outsourche',
     comment:
-      'The service provided exceeded all my expectations. Everything was handled professionally, and I couldn’t be happier with the results!',
+      'We are very satisfied with Dibuiltadi’s services. They understood our needs and delivered solutions on time with high quality.',
     rating: 5.0
   },
   {
     image: 'https://github.com/shadcn.png',
-    name: 'Sophia Collins',
-    userName: 'Cybersecurity Analyst',
-    comment: 'Amazing service! The team was incredibly responsive and made the entire process smooth and stress-free. Highly recommended!',
-    rating: 4.8
-  },
-  {
-    image: 'https://github.com/shadcn.png',
-    name: 'Adam Johnson',
-    userName: 'Chief Technology Officer',
-    comment: 'Top-notch service! From start to finish, everything was handled with care and professionalism. I’m thoroughly impressed.',
-    rating: 4.9
-  },
-  {
-    image: 'https://github.com/shadcn.png',
-    name: 'Ethan Parker',
-    userName: 'Data Scientist',
+    name: 'Nandira Dewi Aryani',
+    userName: 'Director, PT Arthaprada Remittance Indonesia',
     comment:
-      'I’m extremely satisfied with the service. The team went above and beyond to ensure all my needs were met. Fantastic experience!',
+      'Working with Dibuiltadi has taken our business to the next level. The mobile app they developed greatly helped us improve customer interaction.',
     rating: 5.0
   },
   {
     image: 'https://github.com/shadcn.png',
-    name: 'Ava Mitchell',
-    userName: 'IT Project Manager',
-    comment: 'Excellent service! The support team was always available and very helpful throughout. I highly recommend working with them.',
+    name: 'Anonymous',
+    userName: 'CEO, Retail Giant',
+    comment: 'Dibuiltadi created a scalable e-commerce platform for us. It increased our online sales by 40% within the first six months!',
     rating: 5.0
   },
   {
     image: 'https://github.com/shadcn.png',
-    name: 'Isabella Reed',
-    userName: 'DevOps Engineer',
+    name: 'Anonymous',
+    userName: 'IT Manager, Manufacturing Company',
     comment:
-      'I’m absolutely thrilled with the service. It’s rare to find a team this dedicated to delivering quality. Thank you for a wonderful experience!',
-    rating: 4.9
+      'The ERP system implemented by Dibuiltadi automated our business processes and increased operational efficiency by 30%. Highly recommend their services!',
+    rating: 5.0
+  },
+  {
+    image: 'https://github.com/shadcn.png',
+    name: 'Anonymous',
+    userName: 'Healthcare Institution Representative',
+    comment:
+      'The healthcare management system developed by Dibuiltadi significantly reduced patient waiting times and improved overall patient satisfaction.',
+    rating: 5.0
   }
 ];
 
@@ -64,8 +59,10 @@ export const TestimonialSection = () => {
     <section id="testimonials" className="container py-24 sm:py-32">
       <div className="text-center mb-8">
         <h2 className="text-lg text-primary text-center mb-2 tracking-wider">Testimonials</h2>
-
-        <h2 className="text-3xl md:text-4xl text-center font-bold mb-4">Hear What Our 1000+ Clients Say</h2>
+        <h2 className="text-3xl md:text-4xl text-center font-bold mb-4">What Our Clients Say</h2>
+        <h3 className="md:w-1/2 mx-auto text-xl text-center text-muted-foreground mb-8">
+        Read stories from satisfied clients who have benefited from our innovative solutions.
+        </h3>
       </div>
 
       <Carousel
@@ -80,11 +77,10 @@ export const TestimonialSection = () => {
               <Card className="bg-muted/50 dark:bg-card">
                 <CardContent className="pt-6 pb-0">
                   <div className="flex gap-1 pb-6">
-                    <Star className="size-4 fill-primary text-primary" />
-                    <Star className="size-4 fill-primary text-primary" />
-                    <Star className="size-4 fill-primary text-primary" />
-                    <Star className="size-4 fill-primary text-primary" />
-                    <Star className="size-4 fill-primary text-primary" />
+                    {Array.from({ length: Math.floor(review.rating) }).map((_, index) => (
+                      <Star key={index} className="size-4 fill-primary text-primary" />
+                    ))}
+                    {review.rating % 1 !== 0 && <Star className="size-4 text-primary opacity-50" />}
                   </div>
                   {`"${review.comment}"`}
                 </CardContent>
@@ -92,8 +88,8 @@ export const TestimonialSection = () => {
                 <CardHeader>
                   <div className="flex flex-row items-center gap-4">
                     <Avatar>
-                      <AvatarImage src="https://avatars.githubusercontent.com/u/75042455?v=4" alt="radix" />
-                      <AvatarFallback>SV</AvatarFallback>
+                      <AvatarImage src={review.image} alt={review.name} />
+                      <AvatarFallback>{review.name.slice(0, 2)}</AvatarFallback>
                     </Avatar>
 
                     <div className="flex flex-col">
