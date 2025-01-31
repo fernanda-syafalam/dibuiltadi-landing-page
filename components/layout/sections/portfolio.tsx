@@ -12,31 +12,31 @@ const portfolios: PortfolioProps[] = [
   {
     name: 'Fintech PJP3',
     description: 'A secure and reliable payment integration with PJP3.',
-    link: '',
+    link: '#',
     image: '/portfolio/fintech.jpeg'
   },
   {
     name: 'Bursa Exchange System',
     description: 'An advanced trading platform designed for digital transformation in Indonesia',
-    link: '',
+    link: '#',
     image: '/portfolio/bursa-exchange.jpeg'
   },
   {
     name: 'Supply Chain System',
     description: 'A powerful platform streamlining logistics operations and optimizing supply chain management.',
-    link: '',
+    link: '#',
     image: '/portfolio/suply-chain-system.jpeg'
   },
   {
     name: 'CRM System',
     description: 'A custom CRM system to optimize client relationship management.',
-    link: '',
+    link: '#',
     image: '/portfolio/crm-system.jpeg'
   },
   {
     name: 'WhatsApp Blasts',
     description: 'A digital marketing tool for broadcasting messages to WhatsApp users.',
-    link: '',
+    link: '#',
     image: '/portfolio/wa-blast.jpeg'
   }
 ];
@@ -55,15 +55,15 @@ export const PortfolioSection = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {portfolios.map(({ name, description, link, image }) => (
           <div key={name} className="group bg-card rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-            <Link href={link} target="_blank">
+            {/* <Link href={link} target="_blank"> */}
               <div className="relative w-full h-48">
-                <Image src={image} alt={name} fill className="object-cover transition-transform group-hover:scale-105" />
+                <Image src={image} alt={name} fill className="object-cover transition-transform group-hover:scale-105 blur-sm" />
               </div>
               <div className="p-6">
                 <h4 className="text-lg font-bold">{name}</h4>
                 <p className="text-sm opacity-80 mt-2">{description}</p>
               </div>
-            </Link>
+            {/* </Link> */}
           </div>
         ))}
       </div>
