@@ -10,40 +10,34 @@ interface PortfolioProps {
 
 const portfolios: PortfolioProps[] = [
   {
-    name: 'Arthaprada Remittansi Indonesia',
+    name: 'Fintech PJP3',
     description: 'A secure and reliable payment integration with PJP3.',
-    link: 'https://www.arthaprada.co.id',
-    image: '/portfolio/arthaprada.png'
+    link: '',
+    image: '/portfolio/fintech.jpeg'
   },
   {
-    name: 'Assasta Indonesia',
-    description: 'An innovative platform tailored for digital transformation in Indonesia.',
-    link: '#',
-    image: '/portfolio/asasta.png'
+    name: 'Bursa Exchange System',
+    description: 'An advanced trading platform designed for digital transformation in Indonesia',
+    link: '',
+    image: '/portfolio/bursa-exchange.jpeg'
   },
   {
-    name: 'Ptikb',
-    description: 'A comprehensive ERP system designed to improve manufacturing processes.',
-    link: 'https://ptikb.co.id',
-    image: '/portfolio/ptikb.png'
-  },
-  {
-    name: 'Poundfit.org',
-    description: 'A collaborative tool aimed at enhancing team productivity and communication.',
-    link: 'https://poundfit.org',
-    image: '/portfolio/poundfit.png'
+    name: 'Supply Chain System',
+    description: 'A powerful platform streamlining logistics operations and optimizing supply chain management.',
+    link: '',
+    image: '/portfolio/suply-chain-system.jpeg'
   },
   {
     name: 'CRM System',
     description: 'A custom CRM system to optimize client relationship management.',
-    link: '#',
-    image: '/portfolio/crm.png'
+    link: '',
+    image: '/portfolio/crm-system.jpeg'
   },
   {
-    name: 'Intrajasa.id',
-    description: 'A fintech platform delivering secure and efficient digital payment solutions.',
-    link: 'https://intrajasa.id',
-    image: '/portfolio/intrajasa.png'
+    name: 'WhatsApp Blasts',
+    description: 'A digital marketing tool for broadcasting messages to WhatsApp users.',
+    link: '',
+    image: '/portfolio/wa-blast.jpeg'
   }
 ];
 
@@ -54,7 +48,8 @@ export const PortfolioSection = () => {
         <h2 className="text-lg text-primary tracking-wider mb-2">Portfolio</h2>
         <h3 className="text-3xl md:text-4xl font-bold">Our Featured Projects</h3>
         <h3 className="md:w-1/2 mx-auto text-xl text-center text-muted-foreground mb-8">
-        Discover how we have empowered businesses across various industries with cutting-edge solutions.</h3>
+          Discover how we have empowered businesses across various industries with cutting-edge solutions.
+        </h3>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

@@ -9,7 +9,6 @@ import { PortfolioSection } from '@/components/layout/sections/portfolio';
 import { PricingSection } from '@/components/layout/sections/pricing';
 import { ServicesSection } from '@/components/layout/sections/services';
 import { SponsorsSection } from '@/components/layout/sections/sponsors';
-import { TeamSection } from '@/components/layout/sections/team';
 import { TestimonialSection } from '@/components/layout/sections/testimonial';
 import Head from 'next/head';
 
@@ -46,7 +45,10 @@ export default function Home() {
   return (
     <>
       <Head>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="manifest" href="/site.webmanifest" />
       </Head>
       <HeroSection />
       <SponsorsSection />

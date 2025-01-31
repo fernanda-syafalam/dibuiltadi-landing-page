@@ -13,19 +13,19 @@ interface sponsorsProps {
 const sponsors: sponsorsProps[] = [
   {
     icon: 'Briefcase',
-    name: 'Arthaprada.co.id'
+    name: 'Arthaprada'
   },
   {
     icon: 'Building',
-    name: 'Asastaindonesia.com'
+    name: 'Asastaindonesia'
   },
   {
     icon: 'Archive',
-    name: 'Ptikb.co.id'
+    name: 'Ptikb'
   },
   {
     icon: 'Dumbbell',
-    name: 'Poundfit.org'
+    name: 'Poundfit'
   },
   {
     icon: 'Settings',
@@ -33,7 +33,7 @@ const sponsors: sponsorsProps[] = [
   },
   {
     icon: 'Wallet',
-    name: 'Intrajasa.id'
+    name: 'Intrajasa'
   }
 ];
 
