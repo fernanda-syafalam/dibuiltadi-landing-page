@@ -10,8 +10,8 @@ interface PortfolioProps {
 
 const portfolios: PortfolioProps[] = [
   {
-    name: 'Fintech PJP3',
-    description: 'A secure and reliable payment integration with PJP3.',
+    name: 'Fintech',
+    description: 'A secure and reliable payment integration with a user-friendly interface.',
     link: '#',
     image: '/portfolio/fintech.jpeg'
   },
@@ -56,13 +56,13 @@ export const PortfolioSection = () => {
         {portfolios.map(({ name, description, link, image }) => (
           <div key={name} className="group bg-card rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
             {/* <Link href={link} target="_blank"> */}
-              <div className="relative w-full h-48">
-                <Image src={image} alt={name} fill className="object-cover transition-transform group-hover:scale-105 blur-sm" />
-              </div>
-              <div className="p-6">
-                <h4 className="text-lg font-bold">{name}</h4>
-                <p className="text-sm opacity-80 mt-2">{description}</p>
-              </div>
+            <div className="relative w-full h-48">
+              <Image src={image} alt={name} fill className="object-cover transition-transform group-hover:scale-105 blur-sm" />
+            </div>
+            <div className="p-6">
+              <h4 className="text-lg font-bold">{name}</h4>
+              <p className="text-sm opacity-80 mt-2">{description}</p>
+            </div>
             {/* </Link> */}
           </div>
         ))}
