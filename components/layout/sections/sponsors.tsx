@@ -12,28 +12,24 @@ interface sponsorsProps {
 
 const sponsors: sponsorsProps[] = [
   {
-    icon: 'Briefcase',
-    name: 'Arthaprada'
-  },
-  {
     icon: 'Building',
-    name: 'Asastaindonesia'
+    name: 'Fintech'
   },
   {
-    icon: 'Archive',
-    name: 'Ptikb'
+    icon: 'Briefcase',
+    name: 'Bursa Exchange System'
   },
   {
-    icon: 'Dumbbell',
-    name: 'Poundfit'
+    icon: 'Truck',
+    name: 'Supply Chain System'
   },
   {
-    icon: 'Settings',
+    icon: 'User',
     name: 'CRM System'
   },
   {
-    icon: 'Wallet',
-    name: 'Intrajasa'
+    icon: 'Phone',
+    name: 'Whats App Blasts'
   }
 ];
 
