@@ -14,30 +14,33 @@ import Head from 'next/head';
 
 export const metadata = {
   title: 'Dibuiltadi - Software House and Development Agency',
-  description: 'Free Shadcn landing page for developers',
+  description:
+    'We are a team of expert software developers and designers with a passion for delivering high-quality solutions. We specialize in web and mobile application development, UI/UX design, and software consulting.',
   icons: {
     icon: '/favicon.ico'
   },
   openGraph: {
     type: 'website',
-    url: 'https://github.com/nobruf/shadcn-landing-page.git',
-    title: 'Shadcn - Landing template',
-    description: 'Free Shadcn landing page for developers',
+    url: 'https://dibuiltadi.vercel.app',
+    title: 'Dibuiltadi - Software House and Development Agency',
+    description:
+      'We are a team of expert software developers and designers with a passion for delivering high-quality solutions. We specialize in web and mobile application development, UI/UX design, and software consulting.',
     images: [
       {
-        url: 'https://res.cloudinary.com/dbzv9xfjp/image/upload/v1723499276/og-images/shadcn-vue.jpg',
+        url: 'https://res.cloudinary.com/dbzv9xfjp/image/upload/v1723499276/og-images/dibuiltadi.jpg',
         width: 1200,
         height: 630,
-        alt: 'Shadcn - Landing template'
+        alt: 'Dibuiltadi - Software House and Development Agency'
       }
     ]
   },
   twitter: {
     card: 'summary_large_image',
-    site: 'https://github.com/nobruf/shadcn-landing-page.git',
-    title: 'Shadcn - Landing template',
-    description: 'Free Shadcn landing page for developers',
-    images: ['https://res.cloudinary.com/dbzv9xfjp/image/upload/v1723499276/og-images/shadcn-vue.jpg']
+    site: 'https://dibuiltadi.vercel.app',
+    title: 'Dibuiltadi - Software House and Development Agency',
+    description:
+      'We are a team of expert software developers and designers with a passion for delivering high-quality solutions. We specialize in web and mobile application development, UI/UX design, and software consulting.',
+    images: ['https://res.cloudinary.com/dbzv9xfjp/image/upload/v1723499276/og-images/dibuiltadi.jpg']
   }
 };
 
