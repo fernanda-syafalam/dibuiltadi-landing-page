@@ -21,7 +21,7 @@ export const metadata = {
   },
   openGraph: {
     type: 'website',
-    url: 'https://dibuiltadi.vercel.app',
+    url: 'https://dibuiltadi.com',
     title: 'Dibuiltadi - Software House and Development Agency',
     description:
       'We are a team of expert software developers and designers with a passion for delivering high-quality solutions. We specialize in web and mobile application development, UI/UX design, and software consulting.',
@@ -36,7 +36,7 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    site: 'https://dibuiltadi.vercel.app',
+    site: 'https://dibuiltadi.com',
     title: 'Dibuiltadi - Software House and Development Agency',
     description:
       'We are a team of expert software developers and designers with a passion for delivering high-quality solutions. We specialize in web and mobile application development, UI/UX design, and software consulting.',
