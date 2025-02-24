@@ -40,7 +40,7 @@ export const metadata = {
     title: 'Dibuiltadi - Software House and Development Agency',
     description:
       'We are a team of expert software developers and designers with a passion for delivering high-quality solutions. We specialize in web and mobile application development, UI/UX design, and software consulting.',
-    images: ['https://res.cloudinary.com/dbzv9xfjp/image/upload/v1723499276/og-images/dibuiltadi.jpg']
+    images: ['https://res.cloudinary.com/dbzv9xfjp/image/upload/v1723499276/og-images/shadcn-vue.jpg']
   }
 };
 
