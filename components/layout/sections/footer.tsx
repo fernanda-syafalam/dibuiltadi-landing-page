@@ -101,7 +101,7 @@ export const FooterSection = () => {
           {/* PSE Section */}
           <div className="flex flex-col gap-2">
             <div className="flex justify-items-start">
-              <Image src="https://a.m.dana.id/resource/danaweb-v2/footer-kominfo-logo.svg" alt="PSE Logo" width={40} height={40} />
+              <Image src="/kominfo.svg" alt="PSE Logo" width={40} height={40} />
             </div>
           </div>
         </div>
