@@ -16,7 +16,7 @@ const reviewList: ReviewProps[] = [
   {
     image: 'https://github.com/shadcn.png',
     name: 'Surya Himawan',
-    userName: 'Manager, PT Nusa Outsourche',
+    userName: 'Manager',
     comment:
       'We are very satisfied with Dibuiltadi’s services. They understood our needs and delivered solutions on time with high quality.',
     rating: 5.0
@@ -24,7 +24,7 @@ const reviewList: ReviewProps[] = [
   {
     image: 'https://github.com/shadcn.png',
     name: 'Nandira Dewi Aryani',
-    userName: 'Director, PT Arthaprada Remittance Indonesia',
+    userName: 'Director',
     comment:
       'Working with Dibuiltadi has taken our business to the next level. The mobile app they developed greatly helped us improve customer interaction.',
     rating: 5.0
@@ -32,14 +32,14 @@ const reviewList: ReviewProps[] = [
   {
     image: 'https://github.com/shadcn.png',
     name: 'Anonymous',
-    userName: 'CEO, Retail Giant',
+    userName: 'CEO',
     comment: 'Dibuiltadi created a scalable e-commerce platform for us. It increased our online sales by 40% within the first six months!',
     rating: 5.0
   },
   {
     image: 'https://github.com/shadcn.png',
     name: 'Anonymous',
-    userName: 'IT Manager, Manufacturing Company',
+    userName: 'IT Manager',
     comment:
       'The ERP system implemented by Dibuiltadi automated our business processes and increased operational efficiency by 30%. Highly recommend their services!',
     rating: 5.0
