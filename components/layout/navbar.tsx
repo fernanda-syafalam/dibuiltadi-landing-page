@@ -28,6 +28,10 @@ interface FeatureProps {
 
 const routeList: RouteProps[] = [
   {
+    href: 'https://shop.dibuiltadi.com/',
+    label: 'Product'
+  },
+  {
     href: '#testimonials',
     label: 'Testimonials'
   },
