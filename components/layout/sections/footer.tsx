@@ -100,8 +100,13 @@ export const FooterSection = () => {
           </div>
           {/* PSE Section */}
           <div className="flex flex-col gap-2">
+            <h3 className="font-bold text-lg">Sertification</h3>
+
             <div className="flex justify-items-start">
-              <Image src="/kominfo.svg" alt="PSE Logo" width={40} height={40} />
+              <Image src="/kominfo.svg" alt="PSE Logo" width={60} height={60} />
+            </div>
+            <div className="flex justify-items-start">
+              <Image src="/pse.svg" alt="PSE Logo" width={60} height={60} />
             </div>
           </div>
         </div>
