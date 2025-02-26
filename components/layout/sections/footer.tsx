@@ -103,10 +103,10 @@ export const FooterSection = () => {
             <h3 className="font-bold text-lg">Sertification</h3>
 
             <div className="flex justify-items-start">
-              <Image src="/kominfo.svg" alt="PSE Logo" width={60} height={60} />
+              <Image src="/kominfo.svg" alt="PSE Logo" width={45} height={45} />
             </div>
             <div className="flex justify-items-start">
-              <Image src="/pse.svg" alt="PSE Logo" width={60} height={60} />
+              <Image src="/pse.svg" alt="PSE Logo" width={45} height={45} />
             </div>
           </div>
         </div>
