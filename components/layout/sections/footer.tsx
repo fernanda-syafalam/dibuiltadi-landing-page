@@ -7,7 +7,7 @@ export const FooterSection = () => {
   return (
     <footer id="footer" className="container py-24 sm:py-24">
       <div className="p-10 bg-card border border-secondary rounded-2xl">
-        <div className="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6 gap-x-12 gap-y-8">
+        <div className="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-7 gap-x-12 gap-y-8">
           {/* Logo and Company Name */}
           <div className="col-span-full xl:col-span-2">
             <Link href="#" className="flex font-bold items-center">
@@ -72,7 +72,7 @@ export const FooterSection = () => {
                 FAQ
               </Link>
             </div>
-            <div> 
+            <div>
               <Link href="#" className="opacity-60 hover:opacity-100">
                 Feedback
               </Link>
@@ -96,6 +96,12 @@ export const FooterSection = () => {
               <Link href="https://instagram.com" target="_blank" className="opacity-60 hover:opacity-100">
                 Instagram
               </Link>
+            </div>
+          </div>
+          {/* PSE Section */}
+          <div className="flex flex-col gap-2">
+            <div className="flex justify-items-start">
+              <Image src="https://a.m.dana.id/resource/danaweb-v2/footer-kominfo-logo.svg" alt="PSE Logo" width={40} height={40} />
             </div>
           </div>
         </div>
