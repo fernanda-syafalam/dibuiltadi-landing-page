@@ -23,7 +23,7 @@ const reviewList: ReviewProps[] = [
   },
   {
     image: 'https://github.com/shadcn.png',
-    name: 'Nandira Dewi Aryani',
+    name: 'Cecep Ardiyanto P',
     userName: 'Director',
     comment:
       'Working with Dibuiltadi has taken our business to the next level. The mobile app they developed greatly helped us improve customer interaction.',
@@ -31,14 +31,14 @@ const reviewList: ReviewProps[] = [
   },
   {
     image: 'https://github.com/shadcn.png',
-    name: 'Anonymous',
+    name: 'Mohammad Aziz',
     userName: 'CEO',
     comment: 'Dibuiltadi created a scalable e-commerce platform for us. It increased our online sales by 40% within the first six months!',
     rating: 5.0
   },
   {
     image: 'https://github.com/shadcn.png',
-    name: 'Anonymous',
+    name: 'Arif Wicaksan',
     userName: 'IT Manager',
     comment:
       'The ERP system implemented by Dibuiltadi automated our business processes and increased operational efficiency by 30%. Highly recommend their services!',
@@ -46,7 +46,7 @@ const reviewList: ReviewProps[] = [
   },
   {
     image: 'https://github.com/shadcn.png',
-    name: 'Anonymous',
+    name: 'Dr. Puspa Wijaya N',
     userName: 'Healthcare Institution Representative',
     comment:
       'The healthcare management system developed by Dibuiltadi significantly reduced patient waiting times and improved overall patient satisfaction.',
