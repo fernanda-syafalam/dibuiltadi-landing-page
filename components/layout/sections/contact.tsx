@@ -59,7 +59,7 @@ export const ContactSection = () => {
                 <div className="font-bold">Our Location</div>
               </div>
 
-              <div>Grobogan, Central Java, Indonesia.</div>
+              <div>Semarang, Central Java, Indonesia.</div>
             </div>
 
             <div>
