@@ -16,18 +16,6 @@ const portfolios: PortfolioProps[] = [
     image: '/portfolio/fintech.jpeg'
   },
   {
-    name: 'Bursa Exchange System',
-    description: 'An advanced trading platform designed for digital transformation in Indonesia',
-    link: '#',
-    image: '/portfolio/bursa-exchange.jpeg'
-  },
-  {
-    name: 'Supply Chain System',
-    description: 'A powerful platform streamlining logistics operations and optimizing supply chain management.',
-    link: '#',
-    image: '/portfolio/suply-chain-system.jpeg'
-  },
-  {
     name: 'CRM System',
     description: 'A custom CRM system to optimize client relationship management.',
     link: '#',
@@ -38,6 +26,12 @@ const portfolios: PortfolioProps[] = [
     description: 'A digital marketing tool for broadcasting messages to WhatsApp users.',
     link: '#',
     image: '/portfolio/wa-blast.jpeg'
+  },
+  {
+    name: 'Tapbro.com',
+    description: 'Self ordering kiosk application for restaurants to enhance customer experience.',
+    link: 'https://tapbro.com',
+    image: '/portfolio/tapbro.png'
   }
 ];
 
