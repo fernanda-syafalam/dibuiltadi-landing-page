@@ -1,7 +1,7 @@
-import { Separator } from '@/components/ui/separator';
-import { ChevronsDownIcon } from 'lucide-react';
-import Image from 'next/image';
-import Link from 'next/link';
+import { Separator } from "@/components/ui/separator";
+import { ChevronsDownIcon } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
 
 export const FooterSection = () => {
   return (
@@ -11,11 +11,18 @@ export const FooterSection = () => {
           {/* Logo and Company Name */}
           <div className="col-span-full xl:col-span-2">
             <Link href="#" className="flex font-bold items-center">
-              <Image src="/logo.png" alt="Dibuiltadi Logo" width={35} height={35} className="rounded-lg mr-2" />
+              <Image
+                src="/logo.png"
+                alt="Dibuiltadi Logo"
+                width={35}
+                height={35}
+                className="rounded-lg mr-2"
+              />
               <h3 className="text-2xl">Dibuiltadi</h3>
             </Link>
             <p className="mt-4 text-sm opacity-80">
-              Empowering businesses with innovative software solutions. Your trusted partner in technology.
+              Empowering businesses with innovative software solutions. Your
+              trusted partner in technology.
             </p>
           </div>
 
@@ -23,17 +30,27 @@ export const FooterSection = () => {
           <div className="flex flex-col gap-2">
             <h3 className="font-bold text-lg">Contact</h3>
             <div>
-              <Link href="mailto:admin@dibuiltadi.com" className="opacity-60 hover:opacity-100">
+              <Link
+                href="mailto:admin@dibuiltadi.com"
+                className="opacity-60 hover:opacity-100"
+              >
                 Email Us
               </Link>
             </div>
             <div>
-              <Link href="tel:+6285711315972" className="opacity-60 hover:opacity-100">
+              <Link
+                href="tel:+6285711315972"
+                className="opacity-60 hover:opacity-100"
+              >
                 Call Us
               </Link>
             </div>
             <div>
-              <Link href="https://dibuiltadi.com" target="_blank" className="opacity-60 hover:opacity-100">
+              <Link
+                href="https://dibuiltadi.com"
+                target="_blank"
+                className="opacity-60 hover:opacity-100"
+              >
                 Website
               </Link>
             </div>
@@ -83,17 +100,29 @@ export const FooterSection = () => {
           <div className="flex flex-col gap-2">
             <h3 className="font-bold text-lg">Social Media</h3>
             <div>
-              <Link href="https://twitter.com" target="_blank" className="opacity-60 hover:opacity-100">
+              <Link
+                href="https://twitter.com"
+                target="_blank"
+                className="opacity-60 hover:opacity-100"
+              >
                 Twitter
               </Link>
             </div>
             <div>
-              <Link href="https://linkedin.com" target="_blank" className="opacity-60 hover:opacity-100">
+              <Link
+                href="https://linkedin.com"
+                target="_blank"
+                className="opacity-60 hover:opacity-100"
+              >
                 LinkedIn
               </Link>
             </div>
             <div>
-              <Link href="https://instagram.com" target="_blank" className="opacity-60 hover:opacity-100">
+              <Link
+                href="https://instagram.com"
+                target="_blank"
+                className="opacity-60 hover:opacity-100"
+              >
                 Instagram
               </Link>
             </div>
@@ -122,7 +151,7 @@ export const FooterSection = () => {
               href="https://dibuiltadi.com"
               className="text-primary transition-all border-primary hover:border-b-2 ml-1"
             >
-              PT Dibuiltadi Teknologi Kreatif
+              PT Dibuiltadi Solusi Teknologi
             </Link>
           </h3>
         </section>

@@ -1,9 +1,9 @@
-'use client';
-import { Button } from '@/components/ui/button';
-import { ArrowRight } from 'lucide-react';
-import { useTheme } from 'next-themes';
-import Image from 'next/image';
-import Link from 'next/link';
+"use client";
+import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
+import { useTheme } from "next-themes";
+import Image from "next/image";
+import Link from "next/link";
 
 export const HeroSection = () => {
   const { theme } = useTheme();
@@ -21,7 +21,7 @@ export const HeroSection = () => {
           </div>
 
           <p className="max-w-screen-sm mx-auto text-xl text-muted-foreground">
-            {`At PT Dibuiltadi Teknologi Kreatif, we deliver high-quality, scalable, and secure software solutions tailored to your business needs.`}
+            {`At PT Dibuiltadi Solusi Teknologi, we deliver high-quality, scalable, and secure software solutions tailored to your business needs.`}
           </p>
 
           <div className="space-y-4 md:space-y-0 md:space-x-4">
